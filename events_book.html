@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <script src="js/header_footer.js"></script>
+    <meta charset="utf-8" />
+    <title>Special Events of Andre's Restaurant</title>
+    <meta name="description" content="Special events which you can visit at Andre's restaurant">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/header_footer.css" />
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/events.js"></script>
+    
+  </head>
+
+  <body>
+    
+      <!-- start wrap -->
+	<div class="page-wrapper">
+	  <!--start header-->
+	  <header id="header">
+		<h1 class="header_hidden">Andre's Restaurant</h1>
+		  <div id="header_contact">356 Yonge St, Toronto, ON M5B 1S5 - 123.456.7800</div>
+		  <div id="header_reservation"><a href="reserve.html" title="Reservation">
+			  Make a reservation <i class="fa fa-cutlery" aria-hidden="false"></i></a></div>
+		  <a href="home.html" title="Andre's restaurant logo">
+			<img class="logo_image" src="images/logo.png" alt="Andre's restaurant logo" />
+		  </a>
+		  <nav class="menu-bar">
+			<ul>
+			  <li><a href="home.html" title="home page">home</a></li>
+			  <li><a href="about_us.html" title="About restaurant">about</a></li>
+			  <li><a href="menu.html" title="menu items">menu</a></li>
+			  <li><a href="gift_cards.html" title="gift card">gift&#160;cards</a></li>
+			  <li><a href="events_book.html" title="events and bookings">events</a></li>
+			  <li><a href="specials.html" title="specials">specials</a></li>
+			  <li><a href="contest.html" title="contest">contests</a></li>
+			  <li><a href="locations.html" title="location">locations</a></li>
+			  <li><a href="contact_us.html" title="contact information">contact</a></li>
+			  <li><a href="career.html" title="career information">career</a></li>
+			  <li><a href="site_map.html" title="Site Map">Site Map</a></li>
+			</ul>
+		  </nav>
+	  </header>
+	  <!--header end-->
+
+      <div id="page">
+        <main>
+
+          <h1>Special Events at Andre's Restaurant</h1>
+
+          <div id="curSpecial">
+            <img id="mainImg" class="event-img" src="images/bernardo-ramonfaur-436540.jpg" width="600px" alt="Creative music band" title="Visit our special event with music band"/>
+          </div>
+
+          <div id="gallery" class="flex">
+            <div class="mapContainer">
+              
+              <img id="pic1" class="event-img" src="images/bernardo-ramonfaur-436540.jpg" width="200px" height="auto" alt="Creative music band"/>
+              <h2 class="imgHeader">Music Bands Shows</h2>
+            </div>
+
+            <div class="mapContainer">
+              
+              <img id="pic2" class="event-img" src="images/ester-marie-doysabas-253267.jpg" width="200px" height="auto" alt="Charity event"/>
+              <h2 class="imgHeader">Great Charity Events</h2>
+            </div>
+
+            <div class="mapContainer">
+              
+              <img id="pic3" class="event-img" src="images/jaciel-melnik-399287.jpg" width="200px" height="auto" alt="Visit us to play table games"/>
+              <h2 class="imgHeader">Choice of Table Games</h2>
+            </div>
+          </div>
+
+          <form action="#" method="post" id="shippingForm" name="form_ship">
+            <fieldset>
+              <legend>Here you can book your visit to our special event</legend>
+
+              <p><label for="in_Event">Select special event</label>
+                <select id="in_Event" name="f_event">
+                  <option value="0">===SELECT===</option>
+                  <option value="band">Music Band</option>
+                  <option value="char">Charity Event</option>
+                  <option value="game">Table Games</option>
+                </select>
+              </p>
+              <span id="f_event_error"></span>
+
+            <!--USER INFORMATION-->
+              <fieldset>
+                <legend>Your Information</legend>
+
+                <!-- NAME -->
+                <p>
+                  <label for="in_Name">Your Name:</label>
+                  <input type="text" id="in_Name" name="f_Name" />
+                  <span id="f_name_error"></span>
+                </p>
+
+                <!-- CUSTOMER PHONE -->
+                <p>
+                  <label for="in_Phone">Phone:</label>
+                  <input type="text" id="in_Phone" name="f_Phone" />&nbsp;&nbsp;(e.g. 987654)
+                  <span id="f_phone_error"></span>
+              </p>
+
+                <!-- WEEK -->
+                <p>
+                  <label for="in_week">Select week:</label>
+                  <select id="in_week" name="f_week">
+                  <option value="0">===SELECT===</option>
+                  <option value="1">This week</option>
+                  <option value="2">Next Week</option>
+                </select>
+                  <span id="f_week_error"></span>
+                </p>
+              </fieldset>
+             
+            <!-- SUBMIT -->
+              <p>
+                <input type="submit" value="Complete your booking" name="submit" />
+              </p>
+
+            </fieldset>
+            </form>
+
+
+            <!--#### OUTPUT MESSAGE (HIDDEN UNTIL FORM VALIDATES) #### -->
+            <div id="thanks_msg">
+              <h2>Thank you <span id="thanksCustomer"></span> for your booking!</h2>
+              <div>
+                <p>Your visit for event of '<span id="thanksEvent"></span>' for <span id="thanksWeek"></span> week is booked.</p>
+                
+              </div>
+            </div>
+
+        </main>
+      </div>
+
+      <section>
+        <!--footer start-->
+		<footer id="footer">
+		  <nav class="footer-menu-bar">
+			<ul>
+			  <li><a href="home.html">home</a></li>
+			  <li><a href="about_us.html">about</a></li>
+			  <li><a href="menu.html">menu</a></li>
+			  <li><a href="events_book.html">events</a></li>
+			  <li><a href="contact_us.html">contact</a></li>
+			  <li><a href="career.html" title="career information">career</a></li>
+			</ul>
+		  </nav>
+		  <a href="home.html" title="Andre's restaurant logo">
+			<img class="logo_image" src="images/logo.png" alt="Andre's restaurant logo" />
+		  </a>
+		  <div id="footer-btm">
+			<p>copyright © 2017 Andre&rsquo;s Restaurant.All rights reserved.</p>
+			<p>356 Yonge St, Toronto, ON M5B 1S5</p>
+		  </div>
+		</footer>
+		<!--footer end-->
+      </section>
+
+    
+  </body>
+
+</html>

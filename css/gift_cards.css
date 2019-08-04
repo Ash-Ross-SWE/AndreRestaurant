@@ -1,0 +1,60 @@
+
+
+/*General */
+
+html {
+  box-sizing:border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+.page-wrapper {
+  text-align: center;
+	margin: 0 auto;
+}
+
+
+/* Banner */
+
+#banner img {
+  width: 40%;
+  height: auto;
+}
+
+
+
+h2, h3, input {
+	color: #824328;
+	text-align: center;
+}
+
+
+/*Main*/
+
+#main-text p {
+	text-align: center;
+	font-size: 22px;
+  color: #d3af80;
+}
+
+#main {
+    position: relative;
+    padding: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    border: 1px solid #fce2af;
+    width: 1024px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Images*/
+
+img {
+  width: 40%;
+  height: auto;
+}

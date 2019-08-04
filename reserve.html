@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/reserve.js"></script>
+	<script src="js/header_footer.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Andre&rsquo;s Restaurant-Reservation</title>
+	<link rel="stylesheet" type="text/css" href="css/reserve.css">
+	<link rel="stylesheet" type="text/css" href="css/header_footer.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+	<!-- start wrap -->
+	<div class="page-wrapper">
+	  <!--start header-->
+	  <header id="header">
+		<h1 class="header_hidden">Andre's Restaurant</h1>
+		  <div id="header_contact">356 Yonge St, Toronto, ON M5B 1S5 - 123.456.7800</div>
+		  <div id="header_reservation"><a href="reserve.html" title="Reservation">
+			  Make a reservation <i class="fa fa-cutlery" aria-hidden="false"></i></a></div>
+		  <a href="home.html" title="Andre's restaurant logo">
+			<img class="logo_image" src="images/logo.png" alt="Andre's restaurant logo" />
+		  </a>
+		  <nav class="menu-bar">
+			<ul>
+			  <li><a href="home.html" title="home page">home</a></li>
+			  <li><a href="about_us.html" title="About restaurant">about</a></li>
+			  <li><a href="menu.html" title="menu items">menu</a></li>
+			  <li><a href="gift_cards.html" title="gift card">gift&#160;cards</a></li>
+			  <li><a href="events_book.html" title="events and bookings">events</a></li>
+			  <li><a href="specials.html" title="specials">specials</a></li>
+			  <li><a href="contest.html" title="contest">contests</a></li>
+			  <li><a href="locations.html" title="location">locations</a></li>
+			  <li><a href="contact_us.html" title="contact information">contact</a></li>
+			  <li><a href="career.html" title="career information">career</a></li>
+			  <li><a href="site_map.html" title="Site Map">Site Map</a></li>
+			</ul>
+		  </nav>
+	  </header>
+	  <!--header end-->
+	  <main id="main">
+		<h2>Reservations</h2>
+		<p id="main-p">Reserve a table here and We'll get back to you.</p>
+		<section id="reserve-sec">
+		  <h3 class="hidden">Reservation form</h3>
+		  <form action="reserve.html" method="post" name="form1" id="reserve-form">
+		    <div>
+			  <!--Date field-->
+			  <label >Date:</label>
+			  <input type="date" id="form-date" name="userdate" />
+			  <label id="dateErr"></label>
+			  <!-- Time field -->
+			  <label >Time(10:00-21:00):</label>
+			  <input type="time" id="form-time" name="usertime" min="10:00" max="21:00"  />
+			   <span class="validity"></span>
+			   <label id="timeErr"></label>
+			 </div>
+		      <!-- Party size field -->
+			  <select id="party-size" name="party">
+			    <option value="">Select Party size</option>
+			    <option  value="1 Person">1 Person</option>
+			    <option value="2 Persons">2 People</option>
+			    <option value="3 Persons">3 People</option>
+			    <option value="4 Persons">4 People</option>
+			    <option value="5 Persons">5 People</option>
+			    <option value="6 Persons">6 People</option>
+			  </select>
+			  <label id="partyErr"></label>
+		    <!-- Book now Button -->
+		    <div>
+			  <button type="submit"  class="submit" id="submit-form" name="submit" onclick="">BOOK NOW</button>
+		    </div>
+		  </form>
+		  <div id="message"></div>
+		</section>  
+	  </main>
+	  <!--footer start-->
+		<footer id="footer">
+		  <nav class="footer-menu-bar">
+			<ul>
+			  <li><a href="home.html">home</a></li>
+			  <li><a href="about_us.html">about</a></li>
+			  <li><a href="menu.html">menu</a></li>
+			  <li><a href="events_book.html">events</a></li>
+			  <li><a href="contact_us.html">contact</a></li>
+			  <li><a href="careers.html" title="career information">career</a></li>
+			</ul>
+		  </nav>
+		  <a href="home.html" title="Andre's restaurant logo">
+			<img class="logo_image" src="images/logo.png" alt="Andre's restaurant logo" />
+		  </a>
+		  <div id="footer-btm">
+			<p>copyright © 2017 Andre&rsquo;s Restaurant.All rights reserved.</p>
+			<p>356 Yonge St, Toronto, ON M5B 1S5</p>
+		  </div>
+		</footer>
+		<!--footer end-->
+	</div>
+	<!--page wrap end-->
+  </body>
+</html>

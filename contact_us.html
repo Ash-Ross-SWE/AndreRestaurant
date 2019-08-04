@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/contact_us.js"></script>
+	<script src="js/header_footer.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Andre&rsquo;s Restaurant</title>
+	<link rel="stylesheet" type="text/css" href="css/contact_us.css">
+	<link rel="stylesheet" type="text/css" href="css/header_footer.css" />
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	
+  </head>
+  <body>
+	<!-- start wrap -->
+	<div class="page-wrapper">
+	  <!--start header-->
+	  <header id="header">
+		<h1 class="header_hidden">Andre's Restaurant</h1>
+		  <div id="header_contact">356 Yonge St, Toronto, ON M5B 1S5 - 123.456.7800</div>
+		  <div id="header_reservation"><a href="reserve.html" title="Reservation">
+			  Make a reservation <i class="fa fa-cutlery" aria-hidden="false"></i></a></div>
+		  <a href="home.html" title="Andre's restaurant logo">
+			<img class="logo_image" src="images/logo.png" alt="Andre's restaurant logo" />
+		  </a>
+		  <nav class="menu-bar">
+			<ul>
+			  <li><a href="home.html" title="home page">home</a></li>
+			  <li><a href="about_us.html" title="About restaurant">about</a></li>
+			  <li><a href="menu.html" title="menu items">menu</a></li>
+			  <li><a href="gift_cards.html" title="gift card">gift&#160;cards</a></li>
+			  <li><a href="events_book.html" title="events and bookings">events</a></li>
+			  <li><a href="specials.html" title="specials">specials</a></li>
+			  <li><a href="contest.html" title="contest">contests</a></li>
+			  <li><a href="locations.html" title="location">locations</a></li>
+			  <li><a href="contact_us.html" title="contact information">contact</a></li>
+			  <li><a href="career.html" title="career information">career</a></li>
+			  <li><a href="site_map.html" title="Site Map">Site Map</a></li>
+			</ul>
+		  </nav>
+	  </header>
+	  <!--header end-->
+	  <!-- Main Body -->
+	  <main id="main">
+	    <h2 class="hidden">Contact</h2>
+		<section id="section-contact">
+		  <h3>Contact Us</h3>
+		    <!--Contact us Form Start-->
+			<form action="contact_us.html" method="post" name="form1" id="contact-form">
+			  <!--Name field-->
+			  <div>
+				<label for="form-name">Name:</label>
+			  </div>
+			  <div>
+				<input type="text" id="form-name" name="username" placeholder="Your Name...."/>
+				<label id="nameErr"></label>
+			  </div>
+			  <!-- E-mail field -->
+			  <div>
+			    <label for="form-email">E-mail:</label>
+			  </div>
+			  <div>
+			    <input type="email" id="form-email" name="useremail"
+				placeholder="john@example.com" />
+				<label id="emailErr"></label>
+			  </div>
+			  <!-- Subject field -->
+			  <div>
+				<label for="form-subject">Subject:</label>
+			  </div>
+			  <div>
+				<select id="form-subject" name="subject">
+				  <option value="general" Selected>General enquiry</option>
+				  <option value="careers">Careers</option>
+				  <option value="menu">Menu</option>
+				  <option value="others">Others</option>
+				</select>
+			  </div>
+			 
+			  <!-- Message field -->
+			  <div>
+				<label for="form-message">Message:</label>
+			  </div>
+			  <div>
+				<textarea id="form-message" name="message"></textarea><label id="messageErr"></label>
+			  </div>
+			  <!-- Submit button -->
+			  <div>
+				<input type="submit"  class="submit" id="submit-form" name="submit" value="submit" />
+			  </div>
+		    </form>
+			<!-- Subscribe for news and updates -->
+			<div id="control-subscribe">
+			  <h4>Subscribe Here</h4>
+			  <div id="content-box">
+			    <form action="contact_us.html" method="post" name="form2" id="contact-form1">
+			      <p class="para">Sign up with your email address to recieve news and updates.</p>
+			      <div class="para">
+				    <input type="email" id="subs-email" name="subsemail"
+				    placeholder="john@example.com" />
+				    <button type="submit" class="submit"  id="submit-email" name="submit" onclick="">Sign Up</button>
+				    <label id="subsErr"></label>
+			      </div>
+			    </form>
+			  </div>
+			</div>		
+	    </section>
+	  </main>			
+	  <!--footer start-->
+		<footer id="footer">
+		  <nav class="footer-menu-bar">
+			<ul>
+			  <li><a href="home.html">home</a></li>
+			  <li><a href="about_us.html">about</a></li>
+			  <li><a href="menu.html">menu</a></li>
+			  <li><a href="events_book.html">events</a></li>
+			  <li><a href="contact_us.html">contact</a></li>
+			  <li><a href="careers.html" title="career information">career</a></li>
+			</ul>
+		  </nav>
+		  <a href="home.html" title="Andre's restaurant logo">
+			<img class="logo_image" src="images/logo.png" alt="Andre's restaurant logo" />
+		  </a>
+		  <div id="footer-btm">
+			<p>copyright © 2017 Andre&rsquo;s Restaurant.All rights reserved.</p>
+			<p>356 Yonge St, Toronto, ON M5B 1S5</p>
+		  </div>
+		</footer>
+		<!--footer end-->
+	</div>
+	<!--page wrap end-->
+  </body>
+  
+</html>
